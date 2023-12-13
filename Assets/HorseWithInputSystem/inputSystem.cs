@@ -11,7 +11,7 @@ public class InputSystem : MonoBehaviour
     private Vector2 movementValue;
     private float lookValue;
 
-    private Rigidbody rb;
+    public  Rigidbody rb;
     private Animator anim;
 
     private Coroutine jumpCoroutine;
