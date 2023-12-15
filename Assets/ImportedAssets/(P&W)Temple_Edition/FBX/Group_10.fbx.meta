@@ -2,205 +2,13 @@ fileFormatVersion: 2
 guid: a3e92437b953c8144a81673e19f5faaf
 ModelImporter:
   serializedVersion: 22200
-  internalIDToNameTable:
-  - first:
-      1: 100000
-    second: Cube
-  - first:
-      1: 100002
-    second: Cube_001
-  - first:
-      1: 100004
-    second: Cube_002
-  - first:
-      1: 100006
-    second: Cube_005
-  - first:
-      1: 100008
-    second: Cube_006
-  - first:
-      1: 100010
-    second: Cube_007
-  - first:
-      1: 100012
-    second: Cube_008
-  - first:
-      1: 100014
-    second: Cube_009
-  - first:
-      1: 100016
-    second: Cube_010
-  - first:
-      1: 100018
-    second: Cube_011
-  - first:
-      1: 100020
-    second: //RootNode
-  - first:
-      4: 400000
-    second: Cube
-  - first:
-      4: 400002
-    second: Cube_001
-  - first:
-      4: 400004
-    second: Cube_002
-  - first:
-      4: 400006
-    second: Cube_005
-  - first:
-      4: 400008
-    second: Cube_006
-  - first:
-      4: 400010
-    second: Cube_007
-  - first:
-      4: 400012
-    second: Cube_008
-  - first:
-      4: 400014
-    second: Cube_009
-  - first:
-      4: 400016
-    second: Cube_010
-  - first:
-      4: 400018
-    second: Cube_011
-  - first:
-      4: 400020
-    second: //RootNode
-  - first:
-      23: 2300000
-    second: Cube
-  - first:
-      23: 2300002
-    second: Cube_001
-  - first:
-      23: 2300004
-    second: Cube_002
-  - first:
-      23: 2300006
-    second: Cube_005
-  - first:
-      23: 2300008
-    second: Cube_006
-  - first:
-      23: 2300010
-    second: Cube_007
-  - first:
-      23: 2300012
-    second: Cube_008
-  - first:
-      23: 2300014
-    second: Cube_009
-  - first:
-      23: 2300016
-    second: Cube_010
-  - first:
-      23: 2300018
-    second: Cube_011
-  - first:
-      33: 3300000
-    second: Cube
-  - first:
-      33: 3300002
-    second: Cube_001
-  - first:
-      33: 3300004
-    second: Cube_002
-  - first:
-      33: 3300006
-    second: Cube_005
-  - first:
-      33: 3300008
-    second: Cube_006
-  - first:
-      33: 3300010
-    second: Cube_007
-  - first:
-      33: 3300012
-    second: Cube_008
-  - first:
-      33: 3300014
-    second: Cube_009
-  - first:
-      33: 3300016
-    second: Cube_010
-  - first:
-      33: 3300018
-    second: Cube_011
-  - first:
-      43: 4300000
-    second: Cube_007
-  - first:
-      43: 4300002
-    second: Cube_006
-  - first:
-      43: 4300004
-    second: Cube_005
-  - first:
-      43: 4300006
-    second: Cube_002
-  - first:
-      43: 4300008
-    second: Cube_011
-  - first:
-      43: 4300010
-    second: Cube_010
-  - first:
-      43: 4300012
-    second: Cube_009
-  - first:
-      43: 4300014
-    second: Cube_008
-  - first:
-      43: 4300016
-    second: Cube_001
-  - first:
-      43: 4300018
-    second: Cube
-  - first:
-      64: 6400000
-    second: Cube
-  - first:
-      64: 6400002
-    second: Cube_001
-  - first:
-      64: 6400004
-    second: Cube_002
-  - first:
-      64: 6400006
-    second: Cube_005
-  - first:
-      64: 6400008
-    second: Cube_006
-  - first:
-      64: 6400010
-    second: Cube_007
-  - first:
-      64: 6400012
-    second: Cube_008
-  - first:
-      64: 6400014
-    second: Cube_009
-  - first:
-      64: 6400016
-    second: Cube_010
-  - first:
-      64: 6400018
-    second: Cube_011
-  - first:
-      74: 7400000
-    second: Default Take
-  - first:
-      95: 9500000
-    second: //RootNode
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -224,21 +32,21 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importPhysicalCameras: 0
-    importVisibility: 0
+    importPhysicalCameras: 1
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
-    nodeNameCollisionStrategy: 0
-    fileIdsGeneration: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -251,26 +59,26 @@ ModelImporter:
     minBoneWeight: 0.001
     optimizeBones: 1
     meshOptimizationFlags: -1
-    indexFormat: 1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
+    secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 4
-    normalCalculationMode: 0
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -286,15 +94,15 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
-  importBlendShapeDeformPercent: 0
-  remapMaterialsIfMaterialImportModeIsNone: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
