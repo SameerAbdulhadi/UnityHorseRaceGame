@@ -14,7 +14,9 @@ public class move : MonoBehaviour
         anim = GetComponent<Animator>();
         speed = 850f;
         halfSpeed = 180f;
+
     }
+
 
     // Update is called once per frame
     void Update()
