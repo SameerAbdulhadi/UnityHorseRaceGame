@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destroy : MonoBehaviour
+public class Wind : MonoBehaviour
 {
     
     private void OnTriggerEnter(Collider other) // once collide with the horse
