@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 665278f32d8079540b3d2c80bd789020
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BillStart: {fileID: 8300000, guid: eb2fc1557b9025841b85e8b055661a88, type: 3}
+  - Crowd: {fileID: 8300000, guid: db714fa14049a644489a4f92fc02d1d3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

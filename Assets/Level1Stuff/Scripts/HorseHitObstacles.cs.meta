@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 27e9c6f36778b674fbef13b0e30cd21a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Src1: {instanceID: 0}
+  - Src2: {instanceID: 0}
+  - HorseHitThefence: {fileID: 8300000, guid: 36c5edd780fc30040875eb14c521b588, type: 3}
+  - HitSound: {fileID: 8300000, guid: 66c6638e86a349e478f195a689668754, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
