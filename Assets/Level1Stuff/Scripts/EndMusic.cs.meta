@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ae47e08cfd979e649beb4d49e025eaab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - winSound: {instanceID: 0}
+  - endPoint: {fileID: 473539898544326176, guid: fa725e9d8494f2343ad10e8007e3d9ab,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

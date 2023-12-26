@@ -7,13 +7,13 @@ public class InputSystem : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     public float jumpForce;
-    public float jumpAnimationDuration = 0.5f; 
+    public float jumpAnimationDuration = 0.5f;
     private Vector2 movementValue;
     private float lookValue;
-
+    public float c;
+    public Collider HorseCollider;
     private Rigidbody rb;
     private Animator anim;
-
     private Coroutine jumpCoroutine;
 
     public void Awake()
@@ -50,11 +50,13 @@ public class InputSystem : MonoBehaviour
             if (jumpCoroutine != null)
             {
                 StopCoroutine(jumpCoroutine);
+              
             }
             jumpCoroutine = StartCoroutine(ResetJumpAnimation());
+            
         }
     }
-
+    
     IEnumerator ResetJumpAnimation()
     {
         yield return new WaitForSeconds(jumpAnimationDuration);
