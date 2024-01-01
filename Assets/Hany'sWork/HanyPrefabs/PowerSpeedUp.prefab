@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4525063648569908664}
   - component: {fileID: 1282546572522855963}
   - component: {fileID: 4090473053797047144}
+  - component: {fileID: 347586441187151603}
   m_Layer: 0
   m_Name: PowerSpeedUp
   m_TagString: Untagged
@@ -117,6 +118,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe18198bdd792cf4cbc3e85809070482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &347586441187151603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001355063808167864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eae198bddd3d3b4b9e197d6c7310df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4539262490196602214

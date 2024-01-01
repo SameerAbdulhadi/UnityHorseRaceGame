@@ -5,9 +5,11 @@ using UnityEngine;
 public class HanyHitObstacles : MonoBehaviour
 {
     public GameObject checkPoints; 
+   
 
     private void Start()
     {
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -29,13 +31,14 @@ public class HanyHitObstacles : MonoBehaviour
             && horse.transform.position.z >= 2382 && horse.transform.position.z <= 4000)
         {
             horse.transform.position =checkPoints.transform.GetChild(0).transform.position;
-        }
+         }
 
         // go to check point 2 
         if (horse.transform.position.x >= 5700 && horse.transform.position.x <= 7739
             && horse.transform.position.z >= 6400 && horse.transform.position.z <= 7000)
         {
             horse.transform.position = checkPoints.transform.GetChild(1).transform.position;
+ 
         }
 
         //go to check point 3 
@@ -43,6 +46,7 @@ public class HanyHitObstacles : MonoBehaviour
             && horse.transform.position.z >= 9864 && horse.transform.position.z <= 10598)
         {
             horse.transform.position = checkPoints.transform.GetChild(2).transform.position;
+ 
         }
 
         //go to checkpoint 4 
@@ -51,6 +55,7 @@ public class HanyHitObstacles : MonoBehaviour
         {
             horse.transform.position = checkPoints.transform.GetChild(3).transform.position;
             horse.transform.rotation = checkPoints.transform.GetChild(3).rotation;
+ 
         }
 
         //go to checkpoint 5
@@ -59,6 +64,7 @@ public class HanyHitObstacles : MonoBehaviour
         {
             horse.transform.position = checkPoints.transform.GetChild(4).transform.position;
             horse.transform.rotation = checkPoints.transform.GetChild(4).rotation;
+ 
         }
 
         //go to checkpoint 6
@@ -67,6 +73,7 @@ public class HanyHitObstacles : MonoBehaviour
         {
             horse.transform.position = checkPoints.transform.GetChild(5).transform.position;
             horse.transform.rotation = checkPoints.transform.GetChild(5).rotation;
+ 
         }
 
         //go to checkpoint 7
@@ -75,7 +82,7 @@ public class HanyHitObstacles : MonoBehaviour
         {
             horse.transform.position = checkPoints.transform.GetChild(6).transform.position;
             horse.transform.rotation = checkPoints.transform.GetChild(6).rotation;
-        }
+         }
 
         //go to checkpoint 8
         if (horse.transform.position.x >= 2400 && horse.transform.position.x <= 3349
@@ -83,6 +90,7 @@ public class HanyHitObstacles : MonoBehaviour
         {
             horse.transform.position = checkPoints.transform.GetChild(7).transform.position;
             horse.transform.rotation = checkPoints.transform.GetChild(7).rotation;
+ 
         }
 
         //go to checkpoint 9
@@ -91,6 +99,7 @@ public class HanyHitObstacles : MonoBehaviour
         {
             horse.transform.position = checkPoints.transform.GetChild(8).transform.position;
             horse.transform.rotation = checkPoints.transform.GetChild(8).rotation;
+ 
         }
 
         //go to checkpoint 10
@@ -99,6 +108,7 @@ public class HanyHitObstacles : MonoBehaviour
         {
             horse.transform.position = checkPoints.transform.GetChild(9).transform.position;
             horse.transform.rotation = checkPoints.transform.GetChild(9).rotation;
+ 
         }
 
     }

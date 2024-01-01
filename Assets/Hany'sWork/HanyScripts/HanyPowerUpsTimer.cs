@@ -18,10 +18,18 @@ public class HanyPowerUpsTimer : MonoBehaviour
     private bool levelTwoWasCalled = false ;
     private bool levelThreeWasCalled = false;
     public Canvas canvas;
-
+    public Canvas gameover;
     private void Awake()
     {
-        canvas.enabled = false; 
+        if (canvas != null)
+        {
+            canvas.enabled = false;
+        }
+
+        if (gameover != null)
+        {
+            gameover.enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -31,7 +39,7 @@ public class HanyPowerUpsTimer : MonoBehaviour
 
         // invoke level two 
 
-        if (lapsCounter == 2 && levelTwoWasCalled == false )
+        if (lapsCounter == 2 && levelTwoWasCalled == false   )
         {
             LevelTwo();
             levelTwoWasCalled = true;
@@ -155,5 +163,9 @@ public class HanyPowerUpsTimer : MonoBehaviour
     {
         canvas.enabled = false;
         Time.timeScale = 0;
+        if(gameover!= null)
+        {
+            gameover.enabled = true;
+        }
     }
 }

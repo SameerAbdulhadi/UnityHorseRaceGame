@@ -10,7 +10,6 @@ public class HanyFreezeTheScene : MonoBehaviour
     public Sprite countImage2;
     public Sprite countImage3;
     public Image CounterImage; 
-    float duration = 3;
     float count= 3;
     AudioSource beepSrc; 
     public AudioClip beep , siren; 
@@ -35,8 +34,7 @@ public class HanyFreezeTheScene : MonoBehaviour
 
             if (count < 0)
             {
-                beepSrc.clip = siren;
-                beepSrc.Play();
+                
                 CounterImage.enabled = false;
                 break;
             }
@@ -69,6 +67,7 @@ public class HanyFreezeTheScene : MonoBehaviour
 
         if (count == 0)
         {
+            beepSrc.clip = siren;
             beepSrc.Play();
             CounterImage.sprite = countImage0;
         }
