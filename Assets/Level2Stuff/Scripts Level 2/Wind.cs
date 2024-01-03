@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
+    public AudioSource windSound;
     
     private void OnTriggerEnter(Collider other) // once collide with the horse
     {
@@ -18,7 +19,8 @@ public class Wind : MonoBehaviour
     private void ApplyWindEffect(Rigidbody horseRigidbody)
     {
         
-        horseRigidbody.drag*= 0.5f; 
+        horseRigidbody.drag*= 0.5f;
+        windSound.Play();
     }
 
 

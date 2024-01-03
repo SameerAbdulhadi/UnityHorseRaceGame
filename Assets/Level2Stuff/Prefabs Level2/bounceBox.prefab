@@ -139,10 +139,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: 575b9ec16639e4241bbd3b282e03a0d8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -200,3 +200,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c1fb3e5e6c0a34fb1538467a5e6ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxBrake: {fileID: 7557906468254977777, guid: 1217eb25ffbe38347abab3052ad32f72,
+    type: 3}
