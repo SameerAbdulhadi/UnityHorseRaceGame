@@ -18,8 +18,8 @@ public class InputSystem : MonoBehaviour
 
     public void Awake()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
 
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
@@ -33,7 +33,7 @@ public class InputSystem : MonoBehaviour
 
     public void OnMove(InputValue value)
     {
-        movementValue = value.Get<Vector2>() * speed;
+        movementValue = value.Get<Vector2>() * speed ;
         UpdateAnimation();
     }
 
