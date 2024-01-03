@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TouchBox : MonoBehaviour
 {
-    public GameObject Sphere;
     private void OnTriggerEnter(Collider other)
     {
             Life life = other.GetComponent<Life>();
