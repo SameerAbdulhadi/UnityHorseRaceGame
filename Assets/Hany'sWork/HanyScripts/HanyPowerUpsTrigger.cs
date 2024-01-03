@@ -16,7 +16,8 @@ public class HanyPowerUpsTrigger : MonoBehaviour
     {
         if (other.tag == "Horse")
         {
-            Destroy(this.gameObject);
+            this.gameObject.transform.Translate(0, -400, 0); 
+            Destroy(this.gameObject,3.5f);
         }
     }
 
