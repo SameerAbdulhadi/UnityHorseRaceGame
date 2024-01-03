@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2968427557402797835}
   - component: {fileID: 3115544295613804291}
   - component: {fileID: 635054867656623143}
+  - component: {fileID: 1743408971930593219}
   m_Layer: 0
   m_Name: Sand_Pillar (2)
   m_TagString: Untagged
@@ -105,3 +106,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1743408971930593219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933494135968773809}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.734176, y: 27.886103, z: 5.7341776}
+  m_Center: {x: -0.0015624765, y: 13.955964, z: 0.0000010728836}

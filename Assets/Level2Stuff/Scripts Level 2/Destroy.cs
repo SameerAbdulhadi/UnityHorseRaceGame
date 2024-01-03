@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    private float delay = 7;
-
+    private int delay = 3;
+    public ParticleSystem boxBrake;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +15,10 @@ public class Destroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+    private void OnDestroy()
+    {
+        boxBrake.Play();
+        print("destroyed");
     }
 }
