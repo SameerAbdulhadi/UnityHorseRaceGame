@@ -4,9 +4,10 @@ using UnityEditor;
 using UnityEditor.SearchService;
 using UnityEditor.VersionControl;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
+//using UnityEngine.UIElements;
 
-public class HanyPowerUpsTimer : MonoBehaviour
+public class HanyLevelsManager : MonoBehaviour
 {
     int reservedLocation; 
     private float timer = 0; 
@@ -19,8 +20,11 @@ public class HanyPowerUpsTimer : MonoBehaviour
     private bool levelThreeWasCalled = false;
     public Canvas canvas;
     public Canvas gameover;
+    public Image circle;
+
     private void Awake()
     {
+
         if (canvas != null)
         {
             canvas.enabled = false;
@@ -30,13 +34,17 @@ public class HanyPowerUpsTimer : MonoBehaviour
         {
             gameover.enabled = false;
         }
+
+        if(circle!=null)
+        {
+            circle.enabled = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-
         // invoke level two 
 
         if (lapsCounter == 2 && levelTwoWasCalled == false   )
@@ -49,8 +57,10 @@ public class HanyPowerUpsTimer : MonoBehaviour
 
         if (lapsCounter == 3 && levelThreeWasCalled == false )
         {
+             
             ClearLevelTwo();
-            InvokeRepeating( "LevelThree" , 3 ,5);
+            InvokeRepeating( "LevelThree", 1 ,10);
+
             levelThreeWasCalled = true;
             
         }
@@ -59,6 +69,7 @@ public class HanyPowerUpsTimer : MonoBehaviour
 
         if(lapsCounter==4 && levelThreeWasCalled==true)
         {
+            ClearLevelTwo();
             GameOver();
         }
     }
@@ -123,7 +134,10 @@ public class HanyPowerUpsTimer : MonoBehaviour
 
     private void LevelThree()
     {
-        StartCoroutine(ImageController());
+        circle.enabled = true;
+        LevelTwo();
+        StartCoroutine(CircleIncrease());
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -135,37 +149,79 @@ public class HanyPowerUpsTimer : MonoBehaviour
                 lapsCounter = 1;
             }
 
-            if(timer>=20)
+            if(timer>=23)
             {
                 lapsCounter = 2;
             }
 
-            if (timer>=50)
+            if (timer>=54)
             {
                 lapsCounter = 3;
             }
 
-            if(timer >= 70)
+            if(timer >= 80)
             {
                 lapsCounter = 4;
             }
         }
     }
 
-    private IEnumerator ImageController ()
+    private IEnumerator ImageController()
     {
         canvas.enabled = true;
         yield return new WaitForSeconds(4);
         canvas.enabled = false;
     }
 
-    private void GameOver ()
+    public IEnumerator CircleIncrease()
+    {
+
+        while (circle.transform.localScale.x <= 7)
+        {
+            Vector3 current = circle.transform.localScale;
+            float scale = 0.3f;
+            Vector3 newScale = new Vector3(current.x + scale, current.y + scale, current.z);
+            circle.transform.localScale = newScale;
+            yield return new WaitForSeconds(.1f);
+
+        }
+
+        yield return new WaitForSeconds(1);
+
+        StartCoroutine(CircleDecrease());
+
+    }
+
+    public IEnumerator CircleDecrease()
+    {
+
+        while (circle.transform.localScale.x > 1)
+        {
+            Vector3 current = circle.transform.localScale;
+            float scale = 0.3f;
+            Vector3 newScale = new Vector3(current.x - scale, current.y - scale, current.z);
+            circle.transform.localScale = newScale;
+            if (circle.transform.localScale.x > 0 && circle.transform.localScale.x < 1)
+            {
+                circle.transform.localScale = Vector3.zero;
+            }
+            yield return new WaitForSeconds(.1f);
+        }
+    }
+
+
+    public void GameOver ()
     {
         canvas.enabled = false;
+        circle.enabled = false;
         Time.timeScale = 0;
         if(gameover!= null)
         {
+            Debug.Log("!=null"); 
             gameover.enabled = true;
         }
     }
+
+
+    
 }
