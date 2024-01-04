@@ -15,7 +15,8 @@ public class VolcanoMapInputSystem : MonoBehaviour
     private Rigidbody rb;
     private Animator anim;
     private Coroutine jumpCoroutine;
-
+    public int horseLives = 5;
+    public GameObject playerLivesImages;
     public void Awake()
     {
         Cursor.visible = false;
