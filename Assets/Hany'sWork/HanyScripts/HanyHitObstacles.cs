@@ -1,23 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HanyHitObstacles : MonoBehaviour
 {
-    public GameObject checkPoints; 
-   
+    public GameObject checkPoints;
+    HanyPowerInvencible invencibleScript;
+    private float livesCounter = 5;
 
-    private void Start()
+    public Image life5, life4, life3, life2, life1;
+    private void Update()
     {
-
+        LifeImages();
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Horse")
-        {
-
-            GoTolastCheckPoint(other.gameObject); 
-        }
+            if (other.tag == "Horse")
+            {
+                livesCounter--; 
+                GoTolastCheckPoint(other.gameObject);
+            }
     }
     private void OnTriggerStay(Collider other)
     {
@@ -111,5 +114,38 @@ public class HanyHitObstacles : MonoBehaviour
  
         }
 
+    }
+
+    private void LifeImages()
+    {
+        if(livesCounter==5)
+        {
+
+        }
+
+        if(livesCounter==4)
+        {
+            life5.enabled = false;
+        }
+
+        if(livesCounter==3)
+        {
+            life4.enabled = false;
+        }
+
+        if(livesCounter==2)
+        {
+            life3.enabled = false;
+        }
+
+        if(livesCounter==1)
+        {
+            life2.enabled = false;
+        }
+
+        if(livesCounter==0)
+        {
+            life1.enabled = false;
+        }
     }
 }

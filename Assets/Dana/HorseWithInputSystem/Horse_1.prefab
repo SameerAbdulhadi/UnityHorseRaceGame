@@ -441,6 +441,8 @@ MonoBehaviour:
   rotationSpeed: 10
   jumpForce: 100
   jumpAnimationDuration: 0.5
+  c: 0
+  HorseCollider: {fileID: 0}
 --- !u!54 &1571488605168874150
 Rigidbody:
   m_ObjectHideFlags: 0

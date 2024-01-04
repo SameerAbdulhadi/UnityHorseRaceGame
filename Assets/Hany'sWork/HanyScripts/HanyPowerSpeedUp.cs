@@ -7,27 +7,38 @@ public class HanyPowerSpeedUpp : MonoBehaviour
 {
     VolcanoMapInputSystem inputScript;
     float originalSpeed;
-    float duration = 2f;
-
-    
+    float duration = 3f;
+    AudioSource src;
+    private void Start()
+    {
+        src = GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag =="Horse")
         {
-            inputScript = other.GetComponent<VolcanoMapInputSystem>();
-            originalSpeed = inputScript.speed;
-            inputScript.speed *= 2;
+            src.Play();
 
+            // get the script 
+            inputScript = other.GetComponent<VolcanoMapInputSystem>();
+
+            // save the original speed of the horse then double the horse speed 
+            originalSpeed = inputScript.speed;
+            inputScript.speed *=1.5f ;
+
+            // wait for two seconds then reAssign the speed to the original 
             StartCoroutine(SpeedUp());
         }
     }
 
+
     private IEnumerator SpeedUp()
-    {        
-        yield return new WaitForSecondsRealtime(duration);
+    {
+        
+        yield return new WaitForSeconds(duration);
 
         inputScript.speed = originalSpeed;
-        print("the coroutine is done"); 
+
     }
 
 }
