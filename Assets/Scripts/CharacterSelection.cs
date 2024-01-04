@@ -8,6 +8,7 @@ public class CharacterSelection : MonoBehaviour
 
 	public void NextCharacter()
 	{
+		
 		characters[selectedCharacter].SetActive(false);
 		selectedCharacter = (selectedCharacter + 1) % characters.Length;
 		characters[selectedCharacter].SetActive(true);
@@ -15,7 +16,7 @@ public class CharacterSelection : MonoBehaviour
 
 	public void PreviousCharacter()
 	{
-		characters[selectedCharacter].SetActive(false);
+        characters[selectedCharacter].SetActive(false);
 		selectedCharacter--;
 		if (selectedCharacter < 0)
 		{
