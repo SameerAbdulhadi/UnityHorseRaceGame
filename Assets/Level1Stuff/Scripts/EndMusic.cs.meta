@@ -4,9 +4,11 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - winSound: {instanceID: 0}
-  - endPoint: {fileID: 473539898544326176, guid: fa725e9d8494f2343ad10e8007e3d9ab,
+  - Horse1: {fileID: 1759390534076236207, guid: 25fa53ed7ee16c74cab7b546fa72530c,
       type: 3}
+  - Horse2: {fileID: 3990195937640769892, guid: da468b0dabf610e4299059619a16a4a0,
+      type: 3}
+  - winSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

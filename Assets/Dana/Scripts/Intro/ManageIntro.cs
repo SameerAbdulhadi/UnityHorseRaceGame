@@ -19,6 +19,6 @@ public class MangeIntro : MonoBehaviour
     IEnumerator Wait_for_intro()
     {
         yield return new WaitForSeconds(wait_time);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("1");
     }
 }
