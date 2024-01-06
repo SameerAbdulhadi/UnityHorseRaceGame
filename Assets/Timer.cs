@@ -6,10 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+
+    public GameObject lose;
+
+
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
     private void Start()
     {
+
+        lose.gameObject.SetActive(false);
+
         string activeScene = SceneManager.GetActiveScene().name;
         if (activeScene == "Level_2.0")
             remainingTime = 200;
@@ -30,7 +37,24 @@ public class Timer : MonoBehaviour
         {
             remainingTime = 0;
             timerText.color = Color.red;
-            SceneManager.LoadScene("LoseScene");
+
+
+
+            lose.gameObject.SetActive(true);
+            string activeScene = SceneManager.GetActiveScene().name;
+
+            if (activeScene == "Level_2.0")
+                Level2RaceManager.instance.race2FinishCount += 1;
+
+            else if (activeScene == "Level_1")
+                Level1RaceManager.instance.race1FinishCount += 1;
+
+
+            else if (activeScene == "Level_4_Volcano Map")
+                Level3RaceManager.instance.race3FinishCount += 1;
+
+
+
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
