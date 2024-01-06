@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28660,6 +28660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreyHorse+Timer
       objectReference: {fileID: 0}
+    - target: {fileID: 4895011826700634160, guid: a46dd6f9e1a9fb140bf55d1f0c98d775,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28806,6 +28811,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlackHorse+Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954672829292464821, guid: 1fb0df563a500d74a9a73a36a9e9ba0c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29074,6 +29084,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BrownHorse+Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 230052508966621803, guid: d8c8f5190dc11ce4aaad41ea9a3dffd8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 417518481969268478, guid: d8c8f5190dc11ce4aaad41ea9a3dffd8,
         type: 3}
