@@ -9,12 +9,10 @@ public class HanyHitObstacles : MonoBehaviour
     HanyPowerInvencible invencibleScript;
     VolcanoMapInputSystem inputScript;
     HanyLevelsManager timerScript;
-    public Canvas theEnd;
     private GameObject PlayerImagesRef; 
 
     private void Start()
     {
-        theEnd.enabled = false;
         timerScript = FindObjectOfType<HanyLevelsManager>();
     }
     private void OnTriggerEnter(Collider other)
@@ -127,20 +125,6 @@ public class HanyHitObstacles : MonoBehaviour
 
     private void LifeImages(VolcanoMapInputSystem gameObject)
     {
-        if (gameObject.horseLives == 5)
-        {
-
-        }
-
-        if (gameObject.horseLives == 4)
-        {
-            gameObject.playerLivesImages.transform.GetChild(4).gameObject.SetActive(false);
-        }
-
-        if (gameObject.horseLives == 3)
-        {
-            gameObject.playerLivesImages.transform.GetChild(3).gameObject.SetActive(false);
-        }
 
         if (gameObject.horseLives == 2)
         {
@@ -155,13 +139,6 @@ public class HanyHitObstacles : MonoBehaviour
         if (gameObject.horseLives == 0)
         {
             gameObject.playerLivesImages.transform.GetChild(0).gameObject.SetActive(false);
-          
-            if (timerScript != null)
-            {
-                theEnd.enabled = true;
-                timerScript.GameOver();
-            }
-           
-        }
+        }  
     }
-}
+    }
