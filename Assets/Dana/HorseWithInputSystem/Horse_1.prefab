@@ -253,6 +253,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Horse
+      objectReference: {fileID: 0}
     - target: {fileID: 5503078713181440368, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       propertyPath: m_Layer
@@ -442,7 +447,6 @@ MonoBehaviour:
   jumpForce: 100
   jumpAnimationDuration: 0.5
   c: 0
-  HorseCollider: {fileID: 0}
 --- !u!54 &1571488605168874150
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class InputSystem : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class InputSystem : MonoBehaviour
     public float jumpAnimationDuration = 0.5f;
     private Vector2 movementValue;
     private float lookValue;
-    public float c;
     //public Collider HorseCollider;
     private Rigidbody rb;
     private Animator anim;
@@ -24,7 +24,21 @@ public class InputSystem : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
     }
-
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "Level_1") { 
+            this.enabled = false;
+            Invoke("EnableScript",3f);
+        }
+        if (SceneManager.GetActiveScene().name == "HorseSelection")
+        {
+            this.enabled = false;
+            Invoke("EnableScript",100f);
+        }
+    }
+    void EnableScript() { 
+        this.enabled = true;
+    }
     void Update()
     {
         rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);

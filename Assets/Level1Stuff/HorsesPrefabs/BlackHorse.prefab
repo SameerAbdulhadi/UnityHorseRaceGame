@@ -28,6 +28,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -3.82
       objectReference: {fileID: 0}
+    - target: {fileID: 2440050610609721873, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440050610609721873, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5503078713179445162, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -258,6 +268,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Horse
+      objectReference: {fileID: 0}
     - target: {fileID: 5503078713181440368, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       propertyPath: m_Layer
@@ -363,6 +383,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5503078713188743852, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5503078713192940656, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -423,6 +448,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5341026621848089933}
+    - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2196151043824941476}
     - targetCorrespondingSourceObject: {fileID: 5503078713181440196, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       insertIndex: -1
@@ -505,12 +534,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63d99fed797cba44b24bf111f2ccbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100000
+  speed: 50000
   rotationSpeed: 10
   jumpForce: 100
   jumpAnimationDuration: 0.5
-  c: 0
-  HorseCollider: {fileID: 0}
 --- !u!54 &6214346604830370277
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -555,7 +582,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1.5, z: 2.72665}
   m_Center: {x: 1.4964362e-16, y: 1.0778797, z: 0.26053017}
@@ -581,3 +608,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!81 &-2196151043824941476
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759390534076236207}
+  m_Enabled: 0

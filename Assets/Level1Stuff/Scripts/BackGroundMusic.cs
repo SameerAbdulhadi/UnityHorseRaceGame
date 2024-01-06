@@ -24,10 +24,10 @@ public class BackgroundMusicManager : MonoBehaviour
             // Start playing the second track
             PlaySecondTrack();
         }
-        if (Horse.transform.position.x > 203 && Horse.transform.position.x < 238 && Horse.transform.position.z > 553)
-        {
-            audioSource.enabled = false;
-        }
+        //if (Horse.transform.position.x > 203 && Horse.transform.position.x < 238 && Horse.transform.position.z > 553)
+        //{
+        //    audioSource.enabled = false;
+        //}
     }
 
     void PlaySecondTrack()

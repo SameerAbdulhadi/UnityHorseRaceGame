@@ -15,7 +15,7 @@ public class HorseHitObstacles : MonoBehaviour
             {
 
             PlaySound();
-            //horseHit.enabled = true;
+                //horseHit.enabled = true;
                 //horseGotHit.enabled = true;
             }
             else

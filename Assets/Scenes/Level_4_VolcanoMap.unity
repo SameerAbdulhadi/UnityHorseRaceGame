@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.561
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11843769, g: 0.032621954, b: 0.020210767, a: 0.561}
+  m_IndirectSpecularColor: {r: 0.118437685, g: 0.03262195, b: 0.020210767, a: 0.561}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806dd64265cdcc4f84b6781c28f42f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 16000
+  speed: 50000
   rotationSpeed: 250
   jumpForce: 100
   jumpAnimationDuration: 0.5
@@ -5411,7 +5411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &702370575
 MonoBehaviour:
   m_ObjectHideFlags: 0

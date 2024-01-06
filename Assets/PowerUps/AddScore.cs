@@ -16,17 +16,19 @@ public class AddScore : MonoBehaviour
 
         if (other.CompareTag("Horse"))
         {
+            
             ScoreManager scoreManager = other.GetComponent<ScoreManager>();
             ScoreManager.instance.score += amount;
             audio.enabled = true;
             audio.Play();
             StartCoroutine(DestroyObj());
+            
         }
 
     }
     private IEnumerator DestroyObj()
     {
-
+      
         yield return new WaitForSeconds(audio.clip.length);
         Destroy(gameObject);
     }
