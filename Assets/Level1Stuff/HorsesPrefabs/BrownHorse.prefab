@@ -410,10 +410,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5439184481779336042}
-    - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5731678873956781855}
     - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
@@ -431,6 +427,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6270728782908917188}
+    - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3464333704426404172}
     - targetCorrespondingSourceObject: {fileID: 5503078713181440196, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       insertIndex: -1
@@ -501,22 +501,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &5439184481779336042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3990195937640769892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d63d99fed797cba44b24bf111f2ccbd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 50000
-  rotationSpeed: 10
-  jumpForce: 100
-  jumpAnimationDuration: 0.5
 --- !u!54 &5731678873956781855
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -572,7 +556,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3990195937640769892}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 470c52abfaa6ca24b9c5bc9cc9af1393, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -608,3 +592,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3990195937640769892}
   m_Enabled: 0
+--- !u!114 &-3464333704426404172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990195937640769892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0715f1f3adb2e84a806e784a65d9275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 1500
+  baseSpeed: 200
+  maxSpeed: 1600
+  currentSpeed: 0
+  accelerationRate: 2
+  jumpAnimationDuration: 0.5
