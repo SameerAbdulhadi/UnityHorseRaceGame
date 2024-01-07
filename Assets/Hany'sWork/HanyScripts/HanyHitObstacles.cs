@@ -7,20 +7,27 @@ public class HanyHitObstacles : MonoBehaviour
 {
     public GameObject checkPoints;
     HanyPowerInvencible invencibleScript;
-    private float livesCounter = 5;
+    VolcanoMapInputSystem inputScript;
+    HanyLevelsManager timerScript;
+    private GameObject PlayerImagesRef; 
 
-    public Image life5, life4, life3, life2, life1;
-    private void Update()
+    private void Start()
     {
-        LifeImages();
+        timerScript = FindObjectOfType<HanyLevelsManager>();
     }
     private void OnTriggerEnter(Collider other)
     {
-            if (other.tag == "Horse")
+            inputScript = other.GetComponent<VolcanoMapInputSystem>();
+              PlayerImagesRef = inputScript.playerLivesImages;
+        if (other.tag == "Horse")
+        {
+            inputScript.horseLives--;
+            LifeImages(inputScript);
+            if (inputScript.horseLives > 0)
             {
-                livesCounter--; 
                 GoTolastCheckPoint(other.gameObject);
             }
+        }
     }
     private void OnTriggerStay(Collider other)
     {
@@ -116,36 +123,22 @@ public class HanyHitObstacles : MonoBehaviour
 
     }
 
-    private void LifeImages()
+    private void LifeImages(VolcanoMapInputSystem gameObject)
     {
-        if(livesCounter==5)
-        {
 
+        if (gameObject.horseLives == 2)
+        {
+            gameObject.playerLivesImages.transform.GetChild(2).gameObject.SetActive(false);
         }
 
-        if(livesCounter==4)
+        if (gameObject.horseLives == 1)
         {
-            life5.enabled = false;
+            gameObject.playerLivesImages.transform.GetChild(1).gameObject.SetActive(false);
         }
 
-        if(livesCounter==3)
+        if (gameObject.horseLives == 0)
         {
-            life4.enabled = false;
-        }
-
-        if(livesCounter==2)
-        {
-            life3.enabled = false;
-        }
-
-        if(livesCounter==1)
-        {
-            life2.enabled = false;
-        }
-
-        if(livesCounter==0)
-        {
-            life1.enabled = false;
-        }
+            gameObject.playerLivesImages.transform.GetChild(0).gameObject.SetActive(false);
+        }  
     }
-}
+    }
