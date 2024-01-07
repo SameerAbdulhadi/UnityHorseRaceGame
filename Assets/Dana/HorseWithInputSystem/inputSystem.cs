@@ -1,4 +1,4 @@
-/*using UnityEngine;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 using UnityEngine.SceneManagement;
@@ -85,4 +85,3 @@ public class InputSystem : MonoBehaviour
         anim.SetBool("MoveLeft", movementValue.x < 0);
     }
 }
-*/
