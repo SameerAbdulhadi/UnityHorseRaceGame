@@ -8,6 +8,8 @@ TagManager:
   - Horse
   - Fence
   - Obstacle
+  - BrownHorse
+  - BlackHorse
   layers:
   - Default
   - TransparentFX
