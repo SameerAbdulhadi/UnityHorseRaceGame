@@ -2,18 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor;
 
 public class LoadCharacter : MonoBehaviour
 {
 	public GameObject[] characterPrefabs;
-	public Transform spawnPoint;
-	public TMP_Text label;
+	public Transform PlayerspawnPoint;
+    public Transform EnemyspawnPoint;
+    public TMP_Text label;
+	GameObject PlayerHorse;
+	GameObject EnemyHorse;
 
-	void Start()
+	GameObject playerprefab;
+    GameObject Enemyprefab;
+
+
+    void Start()
 	{
 		int selectedCharacter = PlayerPrefs.GetInt("selectedCharacter");
-		GameObject prefab = characterPrefabs[selectedCharacter];
-		GameObject clone = Instantiate(prefab, spawnPoint.position, Quaternion.identity);
-		label.text = prefab.name;
-	}
+        playerprefab = characterPrefabs[selectedCharacter];
+		 PlayerHorse = Instantiate(playerprefab, PlayerspawnPoint.position, Quaternion.identity);
+        //label.text = prefab.name;
+        if (selectedCharacter == 0)
+            Enemyprefab = characterPrefabs[1];
+        else if(selectedCharacter == 1)
+            Enemyprefab = characterPrefabs[0];
+        EnemyHorse = Instantiate(Enemyprefab, EnemyspawnPoint.position, Quaternion.identity);
+
+
+    }
 }

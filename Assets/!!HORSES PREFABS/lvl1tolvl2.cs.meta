@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e99d46e69bbb8764384794706803e184
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - blackHorse: {fileID: 6705097285924737175, guid: c4305f32171d35a46a711d50f6a83a7c,
+      type: 3}
+  - BrownHorse: {fileID: 8854061391859550266, guid: 30da31b657ec8bf4a92271d032c2a0c6,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

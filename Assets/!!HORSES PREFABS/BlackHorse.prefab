@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 824736850263406599}
   - component: {fileID: 3102164149777760170}
-  - component: {fileID: 3274997615965645459}
   - component: {fileID: 2333485786856326780}
   m_Layer: 7
   m_Name: Main Camera
@@ -64,7 +63,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.5
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -86,14 +85,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3274997615965645459
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4140074146737962903}
-  m_Enabled: 1
 --- !u!114 &2333485786856326780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,10 +577,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3636736756879263496}
-    - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5245773534574921957}
     - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
@@ -599,6 +586,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -6254337459155822326}
+    - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7622020474441219557}
     - targetCorrespondingSourceObject: {fileID: 5503078713181440196, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       insertIndex: -1
@@ -689,14 +680,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5908003, y: 1.4999999, z: 2.507284}
   m_Center: {x: 0.0038365605, y: 1.0778798, z: 0.37021297}
---- !u!81 &3636736756879263496
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6705097285924737175}
-  m_Enabled: 0
 --- !u!114 &5245773534574921957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,7 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0715f1f3adb2e84a806e784a65d9275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1500
+  rotationSpeed: 4000
   baseSpeed: 200
   maxSpeed: 1600
   currentSpeed: 0
@@ -741,6 +724,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horse: {fileID: 6705097285924737175}
+--- !u!114 &-7622020474441219557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705097285924737175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c51dec4385e624abf2f6ec340d652b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvl2RespawnPoint: {fileID: 0}
 --- !u!1 &6705097285924737343 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5503078713181440196, guid: fe68a54d8dc824d42b12638073ae26fd,
@@ -787,6 +783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CanvasOnCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241553748761044336, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7013490978130025181, guid: af50fb3213b988b44a7bf89420de4d1f,
         type: 3}

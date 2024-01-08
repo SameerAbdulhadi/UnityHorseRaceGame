@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class InputSystem : MonoBehaviour
 {
@@ -27,11 +29,20 @@ public class InputSystem : MonoBehaviour
         anim = GetComponent<Animator>();
         currentSpeed = baseSpeed;
     }
-
+  
     void Update()
     {
-
-        rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
+        if (SceneManager.GetActiveScene().name == "HorseSelection")
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            this.enabled = false;
+        }
+        else
+        {
+            this.enabled = true;
+        }
+            rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
         rb.AddRelativeForce(movementValue.x * currentSpeed * Time.deltaTime, 0, movementValue.y * currentSpeed * Time.deltaTime);
 
     }
@@ -54,7 +65,7 @@ public class InputSystem : MonoBehaviour
     {
         if (value.isPressed)
         {
-
+           
             anim.SetBool("Jump", true);
 
             if (jumpCoroutine != null)
@@ -65,7 +76,10 @@ public class InputSystem : MonoBehaviour
         }
 
     }
+    int count = 0;
+    //if(SceneManager.GetActiveScene().name = "Level_1"){
 
+      //  }
     IEnumerator ResetJumpAnimation()
     {
         // Reset jump animation after a delay

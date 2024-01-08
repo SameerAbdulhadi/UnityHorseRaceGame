@@ -10,6 +10,7 @@ public class HorseProperties : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        print("1");
         L1.x = 4; L1.y = 4; L1.z = 4;
         L2.x = 5; L2.y = 5; L2.z = 5;
         L3.x = 91; L3.y = 91; L3.z = 91;
