@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class HorseProperties : MonoBehaviour
 {
-    public GameObject horse;
+    private GameObject horse;
     Vector3 L1, L2, L3;
     // Start is called before the first frame update
     void Awake()
     {
+        horse = GameObject.FindWithTag("Horse");
         L1.x = 4; L1.y = 4; L1.z = 4;
         L2.x = 5; L2.y = 5; L2.z = 5;
         L3.x = 91; L3.y = 91; L3.z = 91;
