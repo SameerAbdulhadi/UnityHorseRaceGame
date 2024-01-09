@@ -6,21 +6,10 @@ public class EndPoint2 : MonoBehaviour
 {
     GameObject child, child1, child2;
     public float delayBeforeLoading = 2f;
-
-
-
     public GameObject blackHorse;
     public GameObject BrownHorse;
     public GameObject playerRespawnPoint;
     public GameObject EnemyRespawnPoint;
-
-
-
-
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,11 +24,13 @@ public class EndPoint2 : MonoBehaviour
                 {
 
                     scoreToBoard.instance.brownScore += 1700;
+                    Timer.brownHorseWin = true;
                 }
 
                 else
                 {
                     score2ToBoard.instance.blackScore += 1700;
+                    Timer.blackHorseWin = true;
                 }
 
             }
@@ -50,11 +41,13 @@ public class EndPoint2 : MonoBehaviour
                 if (other.CompareTag("BrownHorse"))
                 {
                     scoreToBoard.instance.brownScore += 1200;
+                    Timer.brownHorseWin = true;
                 }
 
                 else
                 {
                     score2ToBoard.instance.blackScore += 1200;
+                    Timer.blackHorseWin = true;
                 }
 
             }
@@ -85,7 +78,8 @@ public class EndPoint2 : MonoBehaviour
 
     }
 
-    void Respawn2()
+    
+    public void Respawn2()
     {
         Instantiate(blackHorse, playerRespawnPoint.transform.position, playerRespawnPoint.transform.rotation);
         Instantiate(BrownHorse, EnemyRespawnPoint.transform.position, EnemyRespawnPoint.transform.rotation);
