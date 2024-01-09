@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndPoint3 : MonoBehaviour
 {
-    public GameObject win;
+    GameObject child, child1, child2;
+    public float delayBeforeLoading = 2f;
 
     void Start()
     {
-        win.gameObject.SetActive(false);
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("BrownHorse") || other.CompareTag("BlackHorse"))
         {
-            win.gameObject.SetActive(true);
+            
             Level3RaceManager.instance.race3FinishCount += 1;
 
 
@@ -50,6 +52,11 @@ public class EndPoint3 : MonoBehaviour
 
             }
 
+            child = other.gameObject.transform.GetChild(10).gameObject;
+            child1 = child.transform.GetChild(0).gameObject;
+            child2 = child1.transform.GetChild(2).gameObject;
+
+            child2.SetActive(true);
 
 
             Rigidbody playerRigidbody = other.GetComponent<Rigidbody>();
@@ -60,5 +67,18 @@ public class EndPoint3 : MonoBehaviour
                 playerRigidbody.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
+
+        if (Level3RaceManager.instance.race3FinishCount >= 2)
+        {
+            Invoke("LoadEndScene", delayBeforeLoading);
+        }
+
+
+    }
+
+
+    void LoadEndScene()
+    {
+        SceneManager.LoadScene("GameEnd");
     }
 }
