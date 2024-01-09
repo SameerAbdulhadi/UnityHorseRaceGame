@@ -20,22 +20,22 @@ public class scoreBoard : MonoBehaviour
     void Start()
     {
         Board.SetActive(false);
-        float delayInSeconds = 8f;
+        float delayInSeconds = 8.1f;
 
-        
+
         Invoke("ShowScoreboard", delayInSeconds);
     }
 
     void ShowScoreboard()
     {
         Board.SetActive(true);
-        
+
         SetTextPositions();
     }
 
     void Update()
     {
-         if(brown > black)
+        if (brown > black)
         {
             name1.text = "BROWN";
             score1.text = brown.ToString();
@@ -43,7 +43,7 @@ public class scoreBoard : MonoBehaviour
             score2.text = black.ToString();
         }
 
-         else
+        else
         {
 
             name2.text = "BROWN";
@@ -60,15 +60,15 @@ public class scoreBoard : MonoBehaviour
         RectTransform name1Transform = name1.rectTransform;
         RectTransform score1Transform = score1.rectTransform;
 
-        name1Transform.anchoredPosition = new Vector2(300.7f, 30f); // Adjust as needed
-        score1Transform.anchoredPosition = new Vector2(162.4f, 30f);  // Adjust as needed
+        name1Transform.anchoredPosition = new Vector2(300.7f, 30f); 
+        score1Transform.anchoredPosition = new Vector2(162.4f, 30f);  
 
         RectTransform name2Transform = name2.rectTransform;
         RectTransform score2Transform = score2.rectTransform;
 
-       
-        name2Transform.anchoredPosition = new Vector2(300.7f, -42f); // Adjust as needed
-        score2Transform.anchoredPosition = new Vector2(162.4001f, -42f);  // Adjust as needed 
+
+        name2Transform.anchoredPosition = new Vector2(300.7f, -42f);
+        score2Transform.anchoredPosition = new Vector2(162.4001f, -42f);  
     }
 }
 
