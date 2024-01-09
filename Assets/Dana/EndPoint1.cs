@@ -24,7 +24,7 @@ public class EndPoint1 : MonoBehaviour
             if (playerRigidbody != null)
             {
                 // Freeze horse
-                playerRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                //playerRigidbody.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
     }

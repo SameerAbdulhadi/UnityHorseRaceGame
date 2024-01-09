@@ -44,7 +44,7 @@ public class InputSystem : MonoBehaviour
         }
             rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
         rb.AddRelativeForce(movementValue.x * currentSpeed * Time.deltaTime, 0, movementValue.y * currentSpeed * Time.deltaTime);
-
+        
     }
 
     public void OnMove(InputValue value)

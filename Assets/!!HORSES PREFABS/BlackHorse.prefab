@@ -405,7 +405,7 @@ PrefabInstance:
     - target: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       propertyPath: m_TagString
-      value: Horse
+      value: BlackHorse
       objectReference: {fileID: 0}
     - target: {fileID: 5503078713181440368, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
@@ -586,10 +586,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -6254337459155822326}
-    - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -7622020474441219557}
     - targetCorrespondingSourceObject: {fileID: 5503078713181440196, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       insertIndex: -1
@@ -723,20 +719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf127e2c837b2e428831d8ed8c4a008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horse: {fileID: 6705097285924737175}
---- !u!114 &-7622020474441219557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6705097285924737175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c51dec4385e624abf2f6ec340d652b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lvl2RespawnPoint: {fileID: 0}
 --- !u!1 &6705097285924737343 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5503078713181440196, guid: fe68a54d8dc824d42b12638073ae26fd,
