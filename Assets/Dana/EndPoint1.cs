@@ -33,11 +33,13 @@ public class EndPoint1 : MonoBehaviour
                 if (other.CompareTag("BrownHorse"))
                 {
                     scoreToBoard.instance.brownScore += 1500;
+                    Timer.brownHorseWin = true;
                 }
 
                 else
                 {
                     score2ToBoard.instance.blackScore += 1500;
+                    Timer.blackHorseWin = true;
                 }
 
             }
