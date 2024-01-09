@@ -538,10 +538,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0715f1f3adb2e84a806e784a65d9275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1500
+  rotationSpeed: 4000
   baseSpeed: 200
-  maxSpeed: 1600
-  currentSpeed: 0
+  maxSpeed: 400
+  currentSpeed: 200
   accelerationRate: 2
   jumpAnimationDuration: 0.5
 --- !u!114 &1772918412730817355
