@@ -13,26 +13,37 @@ public class AddScore : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-
-        if (other.CompareTag("Horse"))
+        if (other.CompareTag("BrownHorse"))
         {
-            
-            ScoreManager scoreManager = other.GetComponent<ScoreManager>();
-            ScoreManager.instance.score += amount;
+
+            scoreToBoard.instance.brownScore += amount;
+
             audio.enabled = true;
             audio.Play();
             StartCoroutine(DestroyObj());
-            
+
         }
+
+
+        else if (other.CompareTag("BlackHorse"))
+        {
+            score2ToBoard.instance.blackScore += amount;
+
+            audio.enabled = true;
+            audio.Play();
+            StartCoroutine(DestroyObj());
+
+        }
+
 
     }
     private IEnumerator DestroyObj()
     {
-      
+
         yield return new WaitForSeconds(audio.clip.length);
         Destroy(gameObject);
     }
 
-    }
+}
 
 
