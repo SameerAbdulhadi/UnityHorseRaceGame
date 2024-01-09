@@ -5,11 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class EndPoint1 : MonoBehaviour
 {
-    public GameObject win;
+    GameObject child, child1, child2;
+    public float delayBeforeLoading = 2f;
+
+
+
+    public GameObject blackHorse;
+    public GameObject BrownHorse;
+    public GameObject playerRespawnPoint;
+    public GameObject EnemyRespawnPoint;
+
 
     void Start()
     {
-        win.gameObject.SetActive(false);
+      
     }
 
     private void OnTriggerEnter(Collider other)
@@ -17,10 +26,6 @@ public class EndPoint1 : MonoBehaviour
         if (other.CompareTag("BrownHorse") || other.CompareTag("BlackHorse"))
         {
 
-
-
-
-            win.gameObject.SetActive(true);
             Level1RaceManager.instance.race1FinishCount += 1;
 
             if (Level1RaceManager.instance.race1FinishCount == 1)
@@ -53,13 +58,39 @@ public class EndPoint1 : MonoBehaviour
             }
 
 
+            child = other.gameObject.transform.GetChild(10).gameObject;
+            child1 = child.transform.GetChild(0).gameObject;
+            child2 = child1.transform.GetChild(2).gameObject;
+            
+            child2.SetActive(true);
+
+
+
             Rigidbody playerRigidbody = other.GetComponent<Rigidbody>();
 
             if (playerRigidbody != null)
             {
                 // Freeze horse
-                //playerRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                playerRigidbody.constraints = RigidbodyConstraints.FreezeAll;
             }
+
+
+            if (Level1RaceManager.instance.race1FinishCount >= 2)
+            {
+                Invoke("Respawn", delayBeforeLoading);
+            }
+
+
+
+
         }
+    }
+
+
+
+    void Respawn()
+    {
+        Instantiate(blackHorse, playerRespawnPoint.transform.position, playerRespawnPoint.transform.rotation);
+        Instantiate(BrownHorse, EnemyRespawnPoint.transform.position, EnemyRespawnPoint.transform.rotation);
     }
 }

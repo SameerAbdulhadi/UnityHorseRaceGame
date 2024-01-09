@@ -8,6 +8,7 @@ public class scoreBoard : MonoBehaviour
 {
     public int black;
     public int brown;
+    public GameObject button;
 
     public TMP_Text name1;
     public TMP_Text name2;
@@ -19,8 +20,9 @@ public class scoreBoard : MonoBehaviour
 
     void Start()
     {
+        button.SetActive(false);
         Board.SetActive(false);
-        float delayInSeconds = 8.1f;
+        float delayInSeconds = 7.5f;
 
 
         Invoke("ShowScoreboard", delayInSeconds);
@@ -29,7 +31,7 @@ public class scoreBoard : MonoBehaviour
     void ShowScoreboard()
     {
         Board.SetActive(true);
-
+        button.SetActive(true);
         SetTextPositions();
     }
 
