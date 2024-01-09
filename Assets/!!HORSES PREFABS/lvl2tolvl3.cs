@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,17 +25,17 @@ public class lvl2tolvl3 : MonoBehaviour
         if (other.CompareTag("BlackHorse"))
         {
             Instantiate(blackHorse, playerRespawnPoint.transform.position, playerRespawnPoint.transform.rotation);
-            Destroy(other.gameObject);
+           // Destroy(other.gameObject);
             lvl1tolvl2.BlackHorseInstantiated++;
 
         }
         if (other.CompareTag("BrownHorse"))
         {
             Instantiate(BrownHorse, EnemyRespawnPoint.transform.position, EnemyRespawnPoint.transform.rotation);
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             lvl1tolvl2.BrownHorseInstantiated++;
         }
 
     }
 }
-*/
+
