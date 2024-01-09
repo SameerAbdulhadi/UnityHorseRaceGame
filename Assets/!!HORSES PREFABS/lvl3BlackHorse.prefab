@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 40000
-  baseSpeed: 500
+  baseSpeed: 600
   maxSpeed: 1600
   currentSpeed: 0
   accelerationRate: 2

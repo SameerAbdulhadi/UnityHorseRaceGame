@@ -686,8 +686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 40000
   baseSpeed: 500
-  maxSpeed: 16000
-  currentSpeed: 0
+  maxSpeed: 1000
+  currentSpeed: 500
   accelerationRate: 2
   jumpAnimationDuration: 0.5
 --- !u!114 &-6254337459155822326
