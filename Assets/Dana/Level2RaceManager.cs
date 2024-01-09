@@ -22,15 +22,15 @@ public class Level2RaceManager : MonoBehaviour
 
     void Update()
     {
-        if (race2FinishCount >= 2)
-        {
-            Invoke("LoadNextScene", delayBeforeLoading);
-        }
+       // if (race2FinishCount >= 2)
+       // {
+       //     Invoke("LoadNextScene", delayBeforeLoading);
+        //}
     }
 
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene("Level_4_VolcanoMap");
+       // SceneManager.LoadScene("Level_4_VolcanoMap");
     }
 }
