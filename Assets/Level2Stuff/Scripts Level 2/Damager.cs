@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class Damager : MonoBehaviour
 {
+    float timer = 0f, delaytime = 1f;
     private void OnTriggerEnter(Collider other)
     {
-            Life life = other.GetComponent<Life>();
-            if (life != null)
-                life.amount -= 1;
+        Life life = other.GetComponent<Life>();
+        if (life != null && life.amount > 0)
+        {
+            life.amount -= 1;
+            print("damager");
+            StartCoroutine(Delay());
+        }
     }
-    // Start is called before the first frame update
-    void Start()
+    IEnumerator Delay()
     {
-        
+        yield return new WaitForSecondsRealtime(1);
     }
-
     // Update is called once per frame
     void Update()
     {
