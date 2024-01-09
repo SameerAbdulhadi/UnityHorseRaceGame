@@ -45,11 +45,13 @@ public class EndPoint3 : MonoBehaviour
                 {
 
                     scoreToBoard.instance.brownScore += 1400;
+                    Timer.brownHorseWin = true;
                 }
 
                 else
                 {
                     score2ToBoard.instance.blackScore += 1400;
+                    Timer.blackHorseWin = true;
                 }
 
             }
@@ -77,7 +79,6 @@ public class EndPoint3 : MonoBehaviour
 
 
     }
-
 
     void LoadEndScene()
     {

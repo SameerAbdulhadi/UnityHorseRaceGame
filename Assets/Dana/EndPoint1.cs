@@ -6,21 +6,11 @@ using UnityEngine.SceneManagement;
 public class EndPoint1 : MonoBehaviour
 {
     GameObject child, child1, child2;
-    public float delayBeforeLoading = 2f;
-
-
-
+    public float delayBeforeLoading = 2;
     public GameObject blackHorse;
     public GameObject BrownHorse;
     public GameObject playerRespawnPoint;
     public GameObject EnemyRespawnPoint;
-
-
-    void Start()
-    {
-      
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("BrownHorse") || other.CompareTag("BlackHorse"))
@@ -50,11 +40,13 @@ public class EndPoint1 : MonoBehaviour
                 if (other.CompareTag("BrownHorse"))
                 {
                     scoreToBoard.instance.brownScore += 1000;
+                    Timer.brownHorseWin = true;
                 }
 
                 else
                 {
                     score2ToBoard.instance.blackScore += 1000;
+                    Timer.blackHorseWin = true;
                 }
 
             }
@@ -66,31 +58,18 @@ public class EndPoint1 : MonoBehaviour
             
             child2.SetActive(true);
 
-
-
             Rigidbody playerRigidbody = other.GetComponent<Rigidbody>();
-
             if (playerRigidbody != null)
             {
                 // Freeze horse
                 playerRigidbody.constraints = RigidbodyConstraints.FreezeAll;
             }
-
-
-            if (Level1RaceManager.instance.race1FinishCount >= 2)
-            {
-                Invoke("Respawn", delayBeforeLoading);
-            }
-
-
-
-
         }
+            if (Level1RaceManager.instance.race1FinishCount >= 2)
+                Invoke("Respawn", delayBeforeLoading);
     }
-
-
-
-    void Respawn()
+    
+    public void Respawn()
     {
         Instantiate(blackHorse, playerRespawnPoint.transform.position, playerRespawnPoint.transform.rotation);
         Instantiate(BrownHorse, EnemyRespawnPoint.transform.position, EnemyRespawnPoint.transform.rotation);
