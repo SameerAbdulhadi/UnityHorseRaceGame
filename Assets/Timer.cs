@@ -34,10 +34,8 @@ public class Timer : MonoBehaviour
             remainingTime = 150;
         if (lvl1tolvl2.BlackHorseInstantiated == 2)//lvl2
             remainingTime = 200;
- fixtimer
         else if (lvl1tolvl2.BlackHorseInstantiated == 3)
             remainingTime = 165;// lvl3
- main
 
     }
     // Update is called once per frame
