@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7904659955992655531}
   - component: {fileID: 2964372271088365686}
   - component: {fileID: 2104429337096593641}
+  - component: {fileID: 2790032687928500059}
   m_Layer: 0
   m_Name: Barrier_free_obs
   m_TagString: Untagged
@@ -119,3 +120,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f040d9355992244898b03657fa6b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2790032687928500059
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8552901019017533310}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.214033, y: 1.6844534, z: 0.79999995}
+  m_Center: {x: -0.00000023841858, y: 0.8422267, z: 0}

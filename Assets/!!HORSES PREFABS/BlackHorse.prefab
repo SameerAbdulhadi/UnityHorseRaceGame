@@ -769,13 +769,58 @@ PrefabInstance:
     - target: {fileID: 1241553748761044336, guid: af50fb3213b988b44a7bf89420de4d1f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260799710688019099, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260799710688019099, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260799710688019099, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178949887738411121, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178949887738411121, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178949887738411121, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420011861210438294, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420011861210438294, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 7013490978130025181, guid: af50fb3213b988b44a7bf89420de4d1f,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 3102164149777760170}
+    - target: {fileID: 7013490978130025181, guid: af50fb3213b988b44a7bf89420de4d1f,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7476389915156829209, guid: af50fb3213b988b44a7bf89420de4d1f,
         type: 3}
       propertyPath: m_Pivot.x

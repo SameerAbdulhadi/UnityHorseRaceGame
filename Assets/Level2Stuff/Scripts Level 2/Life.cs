@@ -7,7 +7,7 @@ public class Life : MonoBehaviour
     public float amount;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         amount = 3;   
     }
