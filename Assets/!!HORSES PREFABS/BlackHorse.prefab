@@ -405,7 +405,7 @@ PrefabInstance:
     - target: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       propertyPath: m_TagString
-      value: Horse
+      value: BlackHorse
       objectReference: {fileID: 0}
     - target: {fileID: 5503078713181440368, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
@@ -577,10 +577,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5245773534574921957}
-    - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6509733227835569162}
     - targetCorrespondingSourceObject: {fileID: 5503078713181440364, guid: fe68a54d8dc824d42b12638073ae26fd,
         type: 3}
@@ -680,19 +676,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5908003, y: 1.4999999, z: 2.507284}
   m_Center: {x: 0.0038365605, y: 1.0778798, z: 0.37021297}
---- !u!114 &5245773534574921957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6705097285924737175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9c10ad75ba8b2d4ea9af2d78fc4bb62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
 --- !u!114 &6509733227835569162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf127e2c837b2e428831d8ed8c4a008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horse: {fileID: 6705097285924737175}
 --- !u!114 &-7622020474441219557
 MonoBehaviour:
   m_ObjectHideFlags: 0

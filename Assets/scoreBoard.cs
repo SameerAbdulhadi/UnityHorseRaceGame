@@ -20,7 +20,7 @@ public class scoreBoard : MonoBehaviour
     void Start()
     {
         Board.SetActive(false);
-        float delayInSeconds = 8f;
+        float delayInSeconds = 8.1f;
 
         
         Invoke("ShowScoreboard", delayInSeconds);

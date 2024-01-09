@@ -14,10 +14,40 @@ public class EndPoint1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Horse"))
+        if(other.CompareTag("BrownHorse") || other.CompareTag("BlackHorse"))
         {
             win.gameObject.SetActive(true);
             Level1RaceManager.instance.race1FinishCount += 1;
+
+            if (Level1RaceManager.instance.race1FinishCount == 1)
+            {
+                if (other.CompareTag("BrownHorse"))
+                {
+                    scoreToBoard.instance.brownScore +=1500 ;
+                }
+
+                else
+                {
+                    score2ToBoard.instance.blackScore +=1500 ;
+                }
+
+            }
+
+
+            else if(Level1RaceManager.instance.race1FinishCount == 2)
+            {
+                if (other.CompareTag("BrownHorse"))
+                {
+                    scoreToBoard.instance.brownScore +=1000 ;
+                }
+
+                else
+                {
+                    score2ToBoard.instance.blackScore +=1000 ;
+                }
+
+            }
+
 
             Rigidbody playerRigidbody = other.GetComponent<Rigidbody>();
 
