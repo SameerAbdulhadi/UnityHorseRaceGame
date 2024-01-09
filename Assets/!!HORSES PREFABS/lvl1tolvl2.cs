@@ -17,6 +17,12 @@ public class lvl1tolvl2 : MonoBehaviour
     {
         
     }
+    private void Awake()
+    {
+      
+        Rigidbody rb = blackHorse.GetComponent<Rigidbody>();
+        rb.Sleep();
+    }
     private void OnTriggerEnter(Collider other)
     {
 
@@ -25,6 +31,7 @@ public class lvl1tolvl2 : MonoBehaviour
             Instantiate(blackHorse, playerRespawnPoint.transform.position, playerRespawnPoint.transform.rotation);
             Destroy(other.gameObject);
             BlackHorseInstantiated++;
+           
 
         }
         if (other.CompareTag("BrownHorse"))
@@ -38,11 +45,8 @@ public class lvl1tolvl2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lvl1tolvl2.BlackHorseInstantiated == 1 && lvl1tolvl2.BrownHorseInstantiated == 0)
-        {
-            blackHorse.GetComponent<InputSystem>().enabled = false;
-        }
-        else
+        
+      if(BlackHorseInstantiated == 0)
         {
             
         }
