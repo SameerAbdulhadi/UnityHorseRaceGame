@@ -6,24 +6,38 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-
-    public GameObject lose;
-
-
+    GameObject child, child1, child2; //black horse
+    GameObject child3, child4, child5; //brown horse
+    GameObject blackHorse, brownHorse;
+    public static bool blackHorseWin = false, brownHorseWin = false;
+    EndPoint2 endPoint2;
+    EndPoint1 endPoint1;
+    public float delayBeforeLoading = 2f;
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
+    private void Awake()
+    {
+        blackHorse = GameObject.FindGameObjectWithTag("BlackHorse");
+        brownHorse = GameObject.FindGameObjectWithTag("BrownHorse");
+        child = blackHorse.transform.GetChild(10).gameObject;
+        child1 = child.transform.GetChild(0).gameObject;
+        child2 = child1.transform.GetChild(1).gameObject;
+        child2.SetActive(false);
+        child3 = brownHorse.transform.GetChild(10).gameObject;
+        child4 = child.transform.GetChild(0).gameObject;
+        child5 = child1.transform.GetChild(1).gameObject;
+        child5.SetActive(false);
+    }
     private void Start()
     {
-
-        lose.gameObject.SetActive(false);
-
-        string activeScene = SceneManager.GetActiveScene().name;
-        if (activeScene == "Level_2.0")
+        if (lvl1tolvl2.BlackHorseInstantiated == 1) //lvl 1
+            remainingTime = 150;
+        if (lvl1tolvl2.BlackHorseInstantiated == 2)//lvl2
             remainingTime = 200;
-        else if (activeScene == "Level_1")
-            remainingTime = 135;
-       // else if (activeScene == "Level_4_Volcano Map")
-           // remainingTime = 165;
+ fixtimer
+        else if (lvl1tolvl2.BlackHorseInstantiated == 3)
+            remainingTime = 165;// lvl3
+ main
 
     }
     // Update is called once per frame
@@ -37,28 +51,40 @@ public class Timer : MonoBehaviour
         {
             remainingTime = 0;
             timerText.color = Color.red;
+            
+            if (brownHorseWin)
+                child2.SetActive(true);
+            if (blackHorseWin)
+                child5.SetActive(true);
 
-
-
-            lose.gameObject.SetActive(true);
-            string activeScene = SceneManager.GetActiveScene().name;
-
-            if (activeScene == "Level_2.0")
+            if (lvl1tolvl2.BlackHorseInstantiated == 2)
+            {
                 Level2RaceManager.instance.race2FinishCount += 1;
-
-            else if (activeScene == "Level_1")
+            }
+            else if (lvl1tolvl2.BlackHorseInstantiated == 1)
                 Level1RaceManager.instance.race1FinishCount += 1;
-
-
-            else if (activeScene == "Level_4_Volcano Map")
+            else if (lvl1tolvl2.BlackHorseInstantiated == 3)
                 Level3RaceManager.instance.race3FinishCount += 1;
-
-
-
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        if (lvl1tolvl2.BlackHorseInstantiated == 2)
+            if (Level2RaceManager.instance.race2FinishCount >= 2)
+                endPoint2.Respawn2();
+
+            else if (lvl1tolvl2.BlackHorseInstantiated == 1)
+                if (Level1RaceManager.instance.race1FinishCount >= 2)
+                    endPoint1.Respawn();
+
+                else if (lvl1tolvl2.BlackHorseInstantiated == 3)
+                    if (Level3RaceManager.instance.race3FinishCount >=2)
+                        Invoke("LoadEndScene", delayBeforeLoading);
+    }
+    void LoadEndScene()
+    {
+        SceneManager.LoadScene("GameEnd");
     }
     /*public void Resume()
     {
