@@ -678,7 +678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &66759442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,7 +1009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &106210957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,7 +1213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &143370791
 Transform:
   m_ObjectHideFlags: 0
@@ -1510,7 +1510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &179264935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,7 +1592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &185393471
 Transform:
   m_ObjectHideFlags: 0
@@ -3876,7 +3876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &515458720
 Transform:
   m_ObjectHideFlags: 0
@@ -4745,7 +4745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &702370575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5265,7 +5265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &744178173
 Transform:
   m_ObjectHideFlags: 0
@@ -7254,6 +7254,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: starting_line
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a80fbf22077c0594ba335f2418fb43ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7449,7 +7454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1122806325
 Transform:
   m_ObjectHideFlags: 0
@@ -7704,7 +7709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1135653303
 Transform:
   m_ObjectHideFlags: 0
@@ -8532,7 +8537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1305149413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8581,7 +8586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ec9ae7908dd074ba73c1c400af386c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 8237671955294834661, guid: 96298051d1734d74aaaf4d173ef93808, type: 3}
+  delayBeforeLoading: 2
 --- !u!1 &1305887763
 GameObject:
   m_ObjectHideFlags: 0
@@ -8861,6 +8866,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dragon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8338873825185696643, guid: 0d86c0d35c9ce7047ad4941d433ce0f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9105,7 +9115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1379562492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9243,6 +9253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiddleTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f12b0b72f2d21d64db13e1bfa8f3ec4f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1579630423492803110, guid: f12b0b72f2d21d64db13e1bfa8f3ec4f,
         type: 3}
@@ -10197,7 +10212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1509864667
 Transform:
   m_ObjectHideFlags: 0
@@ -10867,7 +10882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1617196994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13137,7 +13152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2051483296
 Transform:
   m_ObjectHideFlags: 0
@@ -13627,7 +13642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2089481192
 Transform:
   m_ObjectHideFlags: 0
@@ -14554,6 +14569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dragon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338873825185696643, guid: 0d86c0d35c9ce7047ad4941d433ce0f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

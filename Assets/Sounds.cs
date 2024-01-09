@@ -18,6 +18,23 @@ public class Sounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (lvl1tolvl2.BlackHorseInstantiated == 0 && lvl1tolvl2.BrownHorseInstantiated == 0)
+        {
+            lvl1Sounds.SetFloat("VolumeParameter", 0);
+            lvl2Sounds.SetFloat("VolumeParameter", 0);
+            lvl3Sounds.SetFloat("VolumeParameter", 0);
+        }
+        if (lvl1tolvl2.BlackHorseInstantiated == 1 && lvl1tolvl2.BrownHorseInstantiated == 1)
+        {
+            lvl1Sounds.SetFloat("VolumeParameter", 0);
+            lvl2Sounds.SetFloat("VolumeParameter", 0);
+            lvl3Sounds.SetFloat("VolumeParameter", 0);
+        }
+        if (lvl1tolvl2.BlackHorseInstantiated == 2 && lvl1tolvl2.BrownHorseInstantiated == 2)
+        {
+            lvl1Sounds.SetFloat("VolumeParameter", 0);
+            lvl2Sounds.SetFloat("VolumeParameter", 0);
+            lvl3Sounds.SetFloat("VolumeParameter", 0);
+        }
     }
 }

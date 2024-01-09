@@ -538,10 +538,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0715f1f3adb2e84a806e784a65d9275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 40000
-  baseSpeed: 500
-  maxSpeed: 1000
-  currentSpeed: 500
+  rotationSpeed: 10000
+  baseSpeed: 250
+  maxSpeed: 400
+  currentSpeed: 250
   accelerationRate: 2
   jumpAnimationDuration: 0.5
 --- !u!114 &1772918412730817355
@@ -638,6 +638,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1350464889867983802, guid: 05a4d81c1b2831849aee3dbc1b780e44,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1938693398520983112, guid: 05a4d81c1b2831849aee3dbc1b780e44,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -722,6 +727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012541454748044533, guid: 05a4d81c1b2831849aee3dbc1b780e44,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8096172694326563874, guid: 05a4d81c1b2831849aee3dbc1b780e44,
         type: 3}

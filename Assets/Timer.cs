@@ -22,8 +22,8 @@ public class Timer : MonoBehaviour
             remainingTime = 200;
         else if (activeScene == "Level_1")
             remainingTime = 135;
-        else if (activeScene == "Level_4_Volcano Map")
-            remainingTime = 165;
+       // else if (activeScene == "Level_4_Volcano Map")
+           // remainingTime = 165;
 
     }
     // Update is called once per frame
