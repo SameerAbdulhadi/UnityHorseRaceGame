@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_2.0.unity
     guid: bdc3b8800cfaa7044bc34df319ce4512
   - enabled: 1
+    path: Assets/Scenes/HorseSelection.unity
+    guid: 4eea22498fbf20348b8475325a8b2996
+  - enabled: 1
     path: Assets/Scenes/TestGame.unity
     guid: d4c867b60215b044b8de700122ca6db8
   - enabled: 1
