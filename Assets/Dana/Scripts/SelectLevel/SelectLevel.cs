@@ -8,7 +8,7 @@ public class SelectLevel : MonoBehaviour
     public void OpenLevel(int levelId)
     {
 
-        SceneManager.LoadScene(levelId);
+        SceneManager.LoadScene("HorseSelection");
 
     }
 }

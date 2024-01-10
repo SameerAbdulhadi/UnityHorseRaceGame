@@ -18,6 +18,6 @@ public class playButton : MonoBehaviour
     {
        
         yield return new WaitForSeconds(audio.clip.length);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("SelectLevel");
     }
 }

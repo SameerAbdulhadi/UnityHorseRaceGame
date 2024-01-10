@@ -10,13 +10,14 @@ public class Level_1 : MonoBehaviour
     public void ButtonClicked()
     {
         audio.Play();
-        StartCoroutine(LoadNextSceneAfterSound());
+        //StartCoroutine(LoadNextSceneAfterSound());
+        SceneManager.LoadScene("HorseSelection");
     }
 
-    private IEnumerator LoadNextSceneAfterSound()
-    {
+    //private IEnumerator LoadNextSceneAfterSound()
+    //{
 
-        yield return new WaitForSeconds(audio.clip.length);
-        SceneManager.LoadScene("Level_1");
-    }
+      //  yield return new WaitForSeconds(audio.clip.length);
+        //SceneManager.LoadScene("HorseSelection");
+    //}
 }
